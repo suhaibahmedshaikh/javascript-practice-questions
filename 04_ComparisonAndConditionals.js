@@ -130,21 +130,106 @@ if (score1 > score2) {
     console.log("Player 2 Wins");
 }
 
-// Determine if a user is eligible for a discount based on their total purchase amount (totalAmount). Log "You qualify for a discount" if the amount is greater than $50, otherwise log "Sorry, no discount."
-// 
-// Check if a user has both a username (username) and a password (password). Log "Login successful" if both are present, otherwise log "Please enter both username and password."
-// 
-// Compare temperature with a threshold value. Log "Temperature is high" if it's greater than 30, otherwise log "Temperature is normal."
-// 
-// Check if a user has selected a valid option (selectedOption). Log "Option is valid" if it's not null or undefined, otherwise log "Please select a valid option."
-// 
+// 12. Determine if a user is eligible for a discount based on their total purchase amount (totalAmount). Log "You qualify for a discount" if the amount is greater than $50, otherwise log "Sorry, no discount."
+
+let totalAmount = 100;
+
+if (totalAmount > 50) {
+    console.log("You qualify for a discount");
+} else {
+    console.log("Sorry, no discount");
+}
+
+// 13. Check if a user has both a username (username) and a password (password). Log "Login successful" if both are present, otherwise log "Please enter both username and password."
+
+let userName = prompt("Enter your Username");
+
+let password = prompt("Enter your password");
+
+if (userName && password) {
+    console.log("Login successful");
+} else {
+    console.log("Please enter both username and password");
+}
+
+// 14. Compare temperature with a threshold value. Log "Temperature is high" if it's greater than 30, otherwise log "Temperature is normal."
+
+let temperature = 28;
+
+if (temperature > 30) {
+    console.log("Temperature is high");
+} else {
+    console.log("Temperature is normal");
+}
+
+// 15. Check if a user has selected a valid option (selectedOption). Log "Option is valid" if it's not null or undefined, otherwise log "Please select a valid option."
+
+let selectedOption = "Chai";
+
+if (selectedOption !== null && selectedOption !== undefined) {
+    console.log("Option is valid");
+} else {
+    console.log("Please select a valid option");
+}
+
 // Logical Operators:
+
 // 16. Check if a user is both a premium user (isPremium) and has made a purchase (hasMadePurchase). Log "Premium user with a purchase" if true, otherwise log "Regular user" if either condition is false.
-// 
-// Ask the user to enter two numbers. Log "Both numbers are positive" if both are greater than 0, otherwise log "At least one number is not positive."
-// 
-// Check if a person is eligible for a driving license based on age (age) and having completed a driving course (hasCompletedCourse). Log "Eligible for a driving license" if both conditions are true, otherwise log "Not eligible."
-// 
-// Determine if a user is a student (isStudent) and has completed an assignment (hasCompletedAssignment). Log "Student has completed the assignment" if both conditions are true, otherwise log "Either not a student or assignment not completed."
-// 
-// Compare a user's input (userInput) with a secret code (secretCode). Log "Access granted" if they match, otherwise log "Access denied."
+
+let isPremium = true;
+
+let hasMadePurchase = false;
+
+if (isPremium && hasMadePurchase) {
+    console.log("Premium user with a purchase");
+} else {
+    console.log("Regular user");
+}
+
+// 17. Ask the user to enter two numbers. Log "Both numbers are positive" if both are greater than 0, otherwise log "At least one number is not positive."
+
+let userNum1 = parseFloat(prompt("Enter first number"));
+
+let userNum2 = parseFloat(prompt("Enter second number"));
+
+if (userNum1 > 0 && userNum2 > 0) {
+    console.log("Both numbers are positive");
+} else {
+    console.log("Atleast one number is not positive");
+}
+
+// 18. Check if a person is eligible for a driving license based on age (age) and having completed a driving course (hasCompletedCourse). Log "Eligible for a driving license" if both conditions are true, otherwise log "Not eligible."
+
+let age = 18;
+
+let hasCompletedCourse = true;
+
+if (age >= 18 && hasCompletedCourse) {
+    console.log("Eligible for a driving license");
+} else {
+    console.log("Not eligible");
+}
+
+// 19. Determine if a user is a student (isStudent) and has completed an assignment (hasCompletedAssignment). Log "Student has completed the assignment" if both conditions are true, otherwise log "Either not a student or assignment not completed."
+
+let isStudent = true;
+
+let hasCompletedAssignment = false;
+
+if (isStudent && hasCompletedAssignment) {
+    console.log("Student has completed the assignment");
+} else {
+    console.log("Either not a student or assignment not completed");
+}
+
+// 20. Compare a user's input (userInput) with a secret code (secretCode). Log "Access granted" if they match, otherwise log "Access denied."
+
+let userInput = 123;
+
+let secretCode = 123;
+
+if (userInput === secretCode) {
+    console.log("Access granted");
+} else {
+    console.log("Access denied");
+}
