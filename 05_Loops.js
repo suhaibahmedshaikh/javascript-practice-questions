@@ -101,16 +101,50 @@ for (let i = 1; i <= 5; i++) {
 
 // 11. Write nested loops to generate a pattern, such as a right-angled triangle or a square.
 
+const counts = 5;
+
+for (let i = 1; i <= counts; i++) {
+    let row = '';
+    for (let j = 1; j <= i; j++) {
+        row += '* ';
+    }
+    console.log(row);
+}
+
+// 12. Create a program that generates a multiplication table for numbers 2 to 4 using nested while loops.
 
 
-// 12. Implement a program that prints the Fibonacci sequence up to the 8th term using nested loops.
+for (let i = 2; i <= 4; i++) {
+    for (let j = 1; j <= 5; j++) {
+        let table = i * j
+        console.log(`${i} * ${j} = ${table}`);
+    }
+    console.log("--------");
+}
 
-// 13. Create a program that generates a multiplication table for numbers 2 to 4 using nested while loops.
 
 // Loop Control Statements:
 
-// 14. Use the break statement to exit a for loop when a certain condition is met.
+// 13. Use the break statement to exit a for loop when a certain condition is met.
 
-// 15. Implement a while loop that skips multiples of 3 using the continue statement.
+const numbers1 = [2, 4, 6, 8, 10, 12, 14, 16, 18, 20];
 
-// 16. Write a program using a labeled loop and the break statement to find a specific value in a 2D array.
+for (let i = 0; i < numbers1.length; i++) {
+  if (numbers1[i] > 10 && numbers1[i] % 2 === 0) {
+    console.log(`The first even number greater than 10 is: ${numbers1[i]}`);
+    break;
+  }
+}
+
+// 14. Implement a while loop that skips multiples of 3 using the continue statement.
+
+let number = 1;
+
+while (number <= 10) {
+  if (number % 3 === 0) {
+    number++;
+    continue;
+  }
+  console.log(number);
+  number++;
+}
