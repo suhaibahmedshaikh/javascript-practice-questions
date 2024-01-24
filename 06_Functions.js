@@ -60,7 +60,18 @@ console.log(result);
 
 // 6. Implement a function findMax that takes an array of numbers and returns the maximum value.
 
+function findMax(numbers) {
+    let max = numbers[0];
+    for (let i = 1; i < numbers.length; i++) {
+        if (numbers[i] > max) {
+            max = numbers[i];
+        }
+    }
+    return max;
+}
 
+const randomNumbers = [27, 64, 47, 78, 48, 11, 76, 25, 11, 83];
+console.log(findMax(randomNumbers));
 
 // 7. Create a function capitalize that takes a string and returns the same string with the first letter capitalized.
 
