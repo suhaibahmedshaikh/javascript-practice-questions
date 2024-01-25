@@ -75,6 +75,21 @@ console.log(findMax(randomNumbers));
 
 // 7. Create a function capitalize that takes a string and returns the same string with the first letter capitalized.
 
+function capitalize(inputString) {
+    if (inputString.length === 0) {
+        return inputString;
+    }
+
+    const capitalizeString = inputString.charAt(0).toUpperCase() + inputString.slice(1);
+    return capitalizeString;
+}
+
+const originalString = 'hello world!';
+const capitalizeString = capitalize(originalString);
+
+console.log(`Original String: ${originalString}`);
+console.log(`Capitalize String: ${capitalizeString}`);
+
 // 8. Write a function isPalindrome that checks if a given string is a palindrome.
 
 // 9. Implement a function factorial that calculates the factorial of a given number.
